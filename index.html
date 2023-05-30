@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+
+    <nav class="navbar">
+     
+      <ul id="navigation-bar"  class="navbar-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Restaurant</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <a onclick=onMenuClick() id="menu-icon " class="menu-icon ">
+        <img src="./icons/ham.png" class="icon-ham">
+     </a>
+
+      <div class="navbar-icons">
+        <img src="./icons/phone.png" alt="Phone Icon">
+        <img src="./icons/cart.jpg" alt="Shopping Cart Icon">
+       
+      </div>
+    </nav>
+
+
+
+    <div class="bg-image">
+      <div class="overlay">
+        <h1>LOREM IPSUM</h1>
+        <p>
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book.
+        </p>
+      </div>
+    </div>
+    <div class="order">
+      <div class="order-now">Order Now</div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/img4.jpg" alt="Image 1">
+          </div>
+          <div class="card-text">
+            <h3>BURGER</h3>
+            <p>Lorem Ipsum has been the
+              industry's standard dummy text.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/img2.jpg" alt="Image 2">
+          </div>
+          <div class="card-text">
+            <h3>PIZZA</h3>
+            <p>Lorem Ipsum has been the
+              industry's standard dummy text.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/img3.jpg" alt="Image 3">
+          </div>
+          <div class="card-text">
+            <h3>PASTA</h3>
+            <p>Lorem Ipsum has been the
+              industry's standard dummy text.</p>
+          </div>
+        </div>
+      </div>
+      <div class="order-button">
+        <button>Order</button>
+      </div>
+    </div>
+
+   <script>
+    function onMenuClick() {
+    var navbar = document.getElementById('navigation-bar');
+    var responsive_class_name = 'responsive'
+    navbar.classList.toggle(responsive_class_name)
+  
+
+}
+   </script>
+
+
+  </body>
+</html>
+
+
